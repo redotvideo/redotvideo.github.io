@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[526],{3358:e=>{e.exports=JSON.parse('{"title":"Advanced","slug":"/category/advanced","permalink":"/category/advanced","navigation":{"previous":{"title":"Custom Components","permalink":"/custom-components"},"next":{"title":"Custom font","permalink":"/custom-font"}}}')}}]);

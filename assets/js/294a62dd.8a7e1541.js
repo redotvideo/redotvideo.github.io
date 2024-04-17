@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[9669],{3148:e=>{e.exports=JSON.parse('{"title":"Migration","slug":"/category/migration","permalink":"/category/migration","navigation":{"previous":{"title":"Node.js","permalink":"/plugins/node"},"next":{"title":"Update Guide","permalink":"/updating"}}}')}}]);
