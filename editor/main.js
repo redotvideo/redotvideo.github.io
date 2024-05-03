@@ -4077,7 +4077,7 @@ class Mh {
     this.completion.current = Sn(0, 1, e), this.lastUpdateTimestamp = n;
   }
   reportProgress() {
-    window.logProgress(this.completion.current);
+    window.logProgress && window.logProgress(this.completion.current);
   }
   /**
    * Reset the estimator.
