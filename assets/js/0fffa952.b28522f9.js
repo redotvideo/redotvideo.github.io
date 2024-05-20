@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[5690],{9285:e=>{e.exports=JSON.parse('{"title":"Guide","slug":"/category/guide","permalink":"/category/guide","navigation":{"previous":{"title":"Revideo Saas Template","permalink":"/revideo-saas-template"},"next":{"title":"Animation flow","permalink":"/flow"}}}')}}]);

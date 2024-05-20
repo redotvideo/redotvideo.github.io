@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[2200],{5262:e=>{e.exports=JSON.parse('{"title":"Components","slug":"/category/components","permalink":"/category/components","navigation":{"previous":{"title":"Configuration","permalink":"/configuration"},"next":{"title":"CodeBlock","permalink":"/code-block"}}}')}}]);
