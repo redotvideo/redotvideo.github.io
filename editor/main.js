@@ -3782,6 +3782,16 @@ class Ah {
       n.variables.updateSignals(e);
   }
   /**
+   * Set the root of all assets that use relative paths.
+   *
+   * e.g. /video.mp4 becomes https://example.com/video.mp4
+   * @param root - The root URL. Including the trailing slash.
+   */
+  setAssetRoot(e) {
+    for (const n of this.playback.onScenesRecalculated.current)
+      n.assetRoot = e;
+  }
+  /**
    * Activate the player.
    *
    * @remarks
