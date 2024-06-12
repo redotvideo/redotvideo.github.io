@@ -4228,7 +4228,7 @@ class Lh {
       else {
         let R = !1;
         for (; !R; )
-          await this.playback.progress(), await this.exportFrame(n), this.estimator.update(zd(a, i, 0, 1, this.playback.frame)), this.estimator.reportProgress(), performance.now() - s > 1 / 30 && (s = performance.now(), await new Promise((I) => setTimeout(I, 0))), (this.playback.finished || this.playback.frame >= i) && (R = !0), n.aborted && (o = Nt.Aborted, R = !0);
+          await this.playback.progress(), this.estimator.update(zd(a, i, 0, 1, this.playback.frame)), this.estimator.reportProgress(), performance.now() - s > 1 / 30 && (s = performance.now(), await new Promise((I) => setTimeout(I, 0))), (this.playback.finished || this.playback.frame >= i) && (R = !0), n.aborted && (o = Nt.Aborted, R = !0), await this.exportFrame(n);
       }
     } catch (R) {
       this.project.logger.error(R), o = Nt.Error;
