@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[5165],{2479:e=>{e.exports=JSON.parse('{"title":"Usage Guide","slug":"/category/usage-guide","permalink":"/category/usage-guide","navigation":{"previous":{"title":"Welcome to Revideo!","permalink":"/"},"next":{"title":"Quickstart","permalink":"/installation-and-setup"}}}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[7561],{9495:e=>{e.exports=JSON.parse('{"title":"Quickstart","slug":"/category/quickstart","permalink":"/category/quickstart","navigation":{"previous":{"title":"Welcome to Revideo!","permalink":"/"},"next":{"title":"Installation and Setup","permalink":"/installation-and-setup"}}}')}}]);
