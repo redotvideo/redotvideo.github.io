@@ -193,7 +193,7 @@ class u_ {
   async seek(e) {
     if (e <= this.frame || this.currentScene.isCached() && this.currentScene.lastFrame < e) {
       const n = this.findBestScene(e);
-      n !== this.currentScene ? (this.previousScene = null, this.currentScene = n, this.frame = this.currentScene.firstFrame, await this.currentScene.reset()) : this.frame >= e && (this.previousScene = null, this.frame = this.currentScene.firstFrame, await this.currentScene.reset());
+      n !== this.currentScene ? (this.currentScene.stopAllMedia(), this.previousScene = null, this.currentScene = n, this.frame = this.currentScene.firstFrame, await this.currentScene.reset()) : this.frame >= e && (this.previousScene = null, this.frame = this.currentScene.firstFrame, await this.currentScene.reset());
     }
     for (this.finished = !1; this.frame < e && !this.finished; )
       this.finished = await this.next();
@@ -3780,16 +3780,6 @@ class Ah {
   setVariables(e) {
     for (const n of this.playback.onScenesRecalculated.current)
       n.variables.updateSignals(e);
-  }
-  /**
-   * Set the root of all assets that use relative paths.
-   *
-   * e.g. /video.mp4 becomes https://example.com/video.mp4
-   * @param root - The root URL. Including the trailing slash.
-   */
-  setAssetRoot(e) {
-    for (const n of this.playback.onScenesRecalculated.current)
-      n.assetRoot = e;
   }
   /**
    * Activate the player.
