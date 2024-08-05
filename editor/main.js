@@ -252,7 +252,7 @@ class u_ {
     if (await this.currentScene.next(), this.previousScene && this.currentScene.isAfterTransitionIn() && (this.previousScene = null), this.currentScene.canTransitionOut()) {
       this.previousScene = this.currentScene;
       const e = this.getNextScene(this.previousScene);
-      e && (this.currentScene = e, await this.currentScene.reset(this.previousScene)), (!e || this.currentScene.isAfterTransitionIn()) && (this.previousScene = null);
+      e && (this.previousScene.stopAllMedia(), this.currentScene = e, await this.currentScene.reset(this.previousScene)), (!e || this.currentScene.isAfterTransitionIn()) && (this.previousScene = null);
     }
     return this.currentScene.isFinished();
   }
@@ -3802,7 +3802,7 @@ class Ah {
    * Just pausing the player does not stop the loop.
    */
   deactivate() {
-    this.active = !1, this.sharedWebGLContext.dispose(), this.requestId !== null && (cancelAnimationFrame(this.requestId), this.requestId = null);
+    this.active = !1, this.sharedWebGLContext.dispose(), this.playback.currentScene.stopAllMedia(), this.requestId !== null && (cancelAnimationFrame(this.requestId), this.requestId = null);
   }
   requestRecalculation() {
     this.requestedRecalculation = !0, this.request();
