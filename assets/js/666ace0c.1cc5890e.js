@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_revideo_docs=self.webpackChunk_revideo_docs||[]).push([[2647],{6206:e=>{e.exports=JSON.parse('{"title":"Get Help","slug":"/category/get-help","permalink":"/category/get-help","navigation":{"previous":{"title":"mergeAudioWithVideo()","permalink":"/ffmpeg/mergeAudioWithVideo"},"next":{"title":"Discord","permalink":"/get-help/discord"}}}')}}]);
