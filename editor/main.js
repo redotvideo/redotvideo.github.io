@@ -4211,7 +4211,7 @@ class Lh {
     let s = performance.now(), o = Ut.Success;
     const l = await this.getMediaByFrames(e);
     let _;
-    this.exporter && this.exporter.generateAudio && (_ = this.exporter.generateAudio(l, a, i)), await this.playback.seek(a);
+    this.exporter && this.exporter.generateAudio && (_ = this.exporter.generateAudio(l, a, i)), this.exporter && this.exporter.downloadVideos && await this.exporter.downloadVideos(l), await this.playback.seek(a);
     try {
       if (this.estimator.reset(1 / (i - a)), await this.exportFrame(n), this.estimator.update($d(a, i, 0, 1, this.playback.frame)), this.estimator.reportProgress(), n.aborted)
         o = Ut.Aborted;
